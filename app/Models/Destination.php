@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Destination extends Model
 {
     use HasFactory;
+    protected $table = "destination";
+
+    public $timestamps = true;
+    protected $fillable = ['title', 'description', 'keyword', 'images', 'address', 'views'];
 }

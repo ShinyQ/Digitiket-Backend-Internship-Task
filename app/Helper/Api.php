@@ -1,12 +1,12 @@
 <?php
 namespace App\Helper;
 
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
+use Illuminate\Http\JsonResponse;
 
 class Api {
 
-    public static function apiRespond($code, $data, $message) {
+    public static function apiRespond($code, $data, $message)
+    {
         if($code == 500){
             $response['status'] = 500;
             $response['message'] = "An Error Has Occured";

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Validator;
-use App\Helper\Api;
+use Api;
 use Exception;
 use Illuminate\Http\Request;
 use App\Models\Destination;

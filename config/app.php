@@ -227,7 +227,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-        'Api' => App\Helpers\Api::class,
+        'Api' => App\Helper\Api::class,
     ],
 
 ];

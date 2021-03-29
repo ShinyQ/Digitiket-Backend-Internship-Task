@@ -1,8 +1,6 @@
 <?php
 namespace App\Helper;
 
-use Illuminate\Http\JsonResponse;
-
 class Api {
 
     public static function apiRespond($code, $data, $message)
@@ -26,22 +24,6 @@ class Api {
             'data' => [
                 'errors' => $errors
             ]
-        ], $status_code);
-    }
-
-    public static function apiResponseSuccess($message = null, $data = null, $status_code = 200) {
-        return response()->json([
-            'message' => $message,
-            'status_code' => $status_code,
-            'data' => $data
-        ], $status_code);
-    }
-
-    public static function apiResponseErrors($message = null, $data = null, $status_code = 401) {
-        return response()->json([
-            'message' => $message,
-            'status_code' => $status_code,
-            'data' => $data
         ], $status_code);
     }
 }
